@@ -12,7 +12,7 @@ require 'git-comitter'
 include GitComitter
 
 module GitComitter
-  attr_accessor :state
+  attr_accessor :state, :message
 
   def clear_flags
     @state = :neutral
@@ -24,5 +24,9 @@ module GitComitter
 
   def _deny
     @state = :denied
+  end
+
+  def print(message)
+    @message = message
   end
 end

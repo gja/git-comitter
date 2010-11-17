@@ -5,11 +5,13 @@ module GitComitter
     end
   end
 
-  def accept(condition = Always.new)
-    _accept if condition.evaluate_match
+  def accept(args = {})
+    print(args[:message]) if args[:message]
+    _accept
   end
 
-  def deny(condition = Always.new)
-    _deny if condition.evaluate_match
+  def deny(args = {})
+    print(args[:message]) if args[:message]
+    _deny
   end
 end
