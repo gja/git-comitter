@@ -1,12 +1,18 @@
+.NetrwTreeListing 1.swo
+.NetrwTreeListing 1.swp
 History.txt
 Manifest.txt
 README.rdoc
 Rakefile
-bin/git-comitter
+bin/git-committer
 lib/git-comitter.rb
+lib/git-comitter/globals.rb
+lib/git-comitter/primitives.rb
 script/console
 script/destroy
 script/generate
+spec/globals_spec.rb
+spec/primitives_spec.rb
 spec/spec.opts
 spec/spec_helper.rb
 tasks/rspec.rake
