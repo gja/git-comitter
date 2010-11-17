@@ -12,17 +12,17 @@ describe GitComitter do
 
   it "should be able to match author of a single commit" do
     self.stub!(:commits).and_return([mock_commit("tejas@gja.in")])
-    all_authors_match(/tejas/).should == true
-    all_authors_match(/somethingelse/).should == false
+    all_commits(matches_email(/tejas/)).should == true
+    all_commits(matches_email(/somethingelse/)).should == false
   end
 
   it "should not match unless all authors match pattern" do
     self.stub!(:commits).and_return([mock_commit("tejas@gja.in"), mock_commit("spam@gja.in")])
-    all_authors_match(/tejas/).should == false
+    all_commits(matches_email(/tejas/)).should == false
   end
 
   it "should be able to take a list of patterns" do
     self.stub!(:commits).and_return([mock_commit("tejas@gja.in"), mock_commit("spam@gja.in")])
-    all_authors_match(/tejas/, /spam/).should == true
+    all_commits(matches_email(/tejas/, /spam/)).should == true
   end
 end

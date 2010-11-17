@@ -7,12 +7,14 @@ lib/git-comitter.rb
 lib/git-comitter/authors.rb
 lib/git-comitter/globals.rb
 lib/git-comitter/primitives.rb
+lib/git-comitter/selector.rb
 script/console
 script/destroy
 script/generate
 spec/authors_spec.rb
 spec/globals_spec.rb
 spec/primitives_spec.rb
+spec/selector_spec.rb
 spec/spec.opts
 spec/spec_helper.rb
 tasks/rspec.rake
