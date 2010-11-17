@@ -1,5 +1,3 @@
-.NetrwTreeListing 1.swo
-.NetrwTreeListing 1.swp
 History.txt
 Manifest.txt
 README.rdoc
