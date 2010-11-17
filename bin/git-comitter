@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+
+require 'git-comitter'
+
+module GitComitter
+  def _accept
+    exit 0
+  end
+
+  def _deny
+    exit 1
+  end
+end
+
+include GitComitter
+
+setup_globals(Git.bare(Dir.pwd), ARGV[2], ARGV[3], ARGV[4])
+
+load ARGV[0]

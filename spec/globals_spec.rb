@@ -4,7 +4,7 @@ require File.dirname(__FILE__) + '/spec_helper.rb'
 
 describe GitComitter do
   before(:each) do
-    setup_globals '.', 'refs/heads/master', '32d1f0b9ed4abe7fd51a2678b7c8dd709fe6f34d', '291dcd04238998b9a901188689e20ba42be83672'
+    setup_globals Git.open("."), 'refs/heads/master', '32d1f0b9ed4abe7fd51a2678b7c8dd709fe6f34d', '291dcd04238998b9a901188689e20ba42be83672'
   end
 
   it "should have set up branch and sha as global constants" do

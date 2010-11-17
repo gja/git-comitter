@@ -2,7 +2,7 @@ History.txt
 Manifest.txt
 README.rdoc
 Rakefile
-bin/git-committer
+bin/git-comitter
 lib/git-comitter.rb
 lib/git-comitter/globals.rb
 lib/git-comitter/primitives.rb

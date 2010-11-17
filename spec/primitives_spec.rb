@@ -3,7 +3,6 @@ require File.dirname(__FILE__) + '/spec_helper.rb'
 # These tests are run against the current git repository
 describe GitComitter do
   before(:each) do
-    setup_globals '.', 'refs/heads/master', '32d1f0b9ed4abe7fd51a2678b7c8dd709fe6f34d', '291dcd04238998b9a901188689e20ba42be83672'
     clear_flags
   end
 
