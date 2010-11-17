@@ -25,11 +25,11 @@ describe GitComitter do
 
   it "should be able to match the latest commit" do
     latest_commit @matcher
-    @matcher.commits.should == [@commit3]
+    @matcher.commits.should == [@commit1]
   end
 
   it "should be able to match the first commit" do
     first_commit @matcher
-    @matcher.commits.should == [@commit1]
+    @matcher.commits.should == [@commit3]
   end
 end

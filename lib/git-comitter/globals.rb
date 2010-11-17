@@ -9,6 +9,6 @@ module GitComitter
   end
 
   def commits
-    @git.log.between(old_sha, new_sha)
+    @git.log.between(old_sha, new_sha).to_a
   end
 end
