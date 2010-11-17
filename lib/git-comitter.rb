@@ -4,3 +4,6 @@ $:.unshift(File.dirname(__FILE__)) unless
 module GitCommitter
   VERSION = '0.0.1'
 end
+
+require 'git'
+require 'git-comitter/globals.rb'

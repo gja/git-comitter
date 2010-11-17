@@ -7,3 +7,6 @@ rescue LoadError
 end
 
 $:.unshift(File.dirname(__FILE__) + '/../lib')
+require 'git-comitter'
+
+include GitComitter
