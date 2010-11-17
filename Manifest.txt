@@ -4,11 +4,13 @@ README.rdoc
 Rakefile
 bin/git-comitter
 lib/git-comitter.rb
+lib/git-comitter/authors.rb
 lib/git-comitter/globals.rb
 lib/git-comitter/primitives.rb
 script/console
 script/destroy
 script/generate
+spec/authors_spec.rb
 spec/globals_spec.rb
 spec/primitives_spec.rb
 spec/spec.opts
