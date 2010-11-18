@@ -6,6 +6,7 @@ bin/git-comitter
 lib/git-comitter.rb
 lib/git-comitter/branch.rb
 lib/git-comitter/commit.rb
+lib/git-comitter/cruise.rb
 lib/git-comitter/globals.rb
 lib/git-comitter/primitives.rb
 lib/git-comitter/selector.rb
