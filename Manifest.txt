@@ -4,6 +4,7 @@ README.rdoc
 Rakefile
 bin/git-comitter
 lib/git-comitter.rb
+lib/git-comitter/branch.rb
 lib/git-comitter/commit.rb
 lib/git-comitter/globals.rb
 lib/git-comitter/primitives.rb
@@ -11,6 +12,7 @@ lib/git-comitter/selector.rb
 script/console
 script/destroy
 script/generate
+spec/branch_spec.rb
 spec/commit_spec.rb
 spec/globals_spec.rb
 spec/primitives_spec.rb

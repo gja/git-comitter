@@ -1,6 +1,5 @@
 require File.dirname(__FILE__) + '/spec_helper.rb'
 
-# These tests are run against the current git repository
 describe GitComitter do
   before(:each) do
     clear_flags
