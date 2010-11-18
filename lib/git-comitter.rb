@@ -8,5 +8,5 @@ end
 require 'git'
 require 'git-comitter/globals.rb'
 require 'git-comitter/primitives.rb'
-require 'git-comitter/authors.rb'
+require 'git-comitter/commit.rb'
 require 'git-comitter/selector.rb'
