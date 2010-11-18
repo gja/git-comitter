@@ -1,16 +1,21 @@
 module GitComitter
-  class EmailMatcher
-    def initialize(patterns)
+  class PatternMatcher
+    def initialize(patterns, &block)
       @patterns = patterns
+      @commit_property = block
     end
 
-    def match(commits) 
-      emails = commits.map{|c| c.author.email}
-      return emails.all? {|email| @patterns.any?{ |pattern| email.match pattern } }
+    def match(commits)
+      messages = commits.map{|c| @commit_property.call c}
+      return messages.all? {|message| @patterns.any?{ |pattern| message.match pattern } }
     end
   end
 
   def matches_email(*patterns)    
-    EmailMatcher.new(patterns)
+    PatternMatcher.new(patterns) {|c| c.author.email}
+  end
+
+  def matches_message(*patterns)
+    PatternMatcher.new(patterns) {|c| c.message}
   end
 end
