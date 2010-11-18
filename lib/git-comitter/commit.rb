@@ -7,7 +7,7 @@ module GitComitter
 
     def match(commits)
       messages = commits.map{|c| @commit_property.call c}
-      return messages.all? {|message| @patterns.any?{ |pattern| message.match pattern } }
+      return messages.all? {|message| @patterns.any?{ |pattern| message =~ pattern } }
     end
   end
 
