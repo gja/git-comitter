@@ -6,7 +6,7 @@ describe GitComitter do
   end
 
   it "Should be able to determine if a branch is in a particular list" do
-    self.stub!(:branch).and_return("refs/heads/master")
+    self.stub!(:full_branch).and_return("refs/heads/master")
     branch_is_in("master", "foo").should == true
     branch_is_in("foo", "bar").should == false
   end

@@ -8,9 +8,13 @@ describe GitComitter do
   end
 
   it "should have set up branch and sha as global constants" do
-    branch.should == 'refs/heads/master'
+    full_branch.should == 'refs/heads/master'
     old_sha.should == '32d1f0b9ed4abe7fd51a2678b7c8dd709fe6f34d'
     new_sha.should == '291dcd04238998b9a901188689e20ba42be83672'
+  end
+
+  it "should get the short name of the branch" do
+    branch.should == 'master'
   end
 
   it "should get a list of commits" do
